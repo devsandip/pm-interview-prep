@@ -1,0 +1,107 @@
+PM INTERVIEW PREP SYSTEM - COMPLETE FOLDER STRUCTURE
+=====================================================
+
+PrepQuestions/                                    ← ROOT FOLDER (copy this entire folder)
+│
+├── 📄 README.md                                  ← START HERE - Complete documentation
+├── 📄 INSTALL.md                                 ← Installation instructions
+├── 📄 config.yaml                                ← Category registry (what's active)
+│
+├── 📁 _core/                                     ← Core system files
+│   ├── 📄 plugin-schema.md                       ← How to create new plugins (20 KB)
+│   ├── 📄 master-generator.md                    ← Paste into Cowork Scheduled Task (8 KB)
+│   └── 📄 evaluator.md                           ← Paste into Cowork Project (13 KB)
+│
+├── 📁 plugins/                                   ← Self-contained category plugins
+│   │
+│   │   ─── STRATEGIC (5 categories) ───
+│   │
+│   ├── 📁 product-roadmap/
+│   │   ├── 📄 framework.md                       ← MATRIX Framework (14 KB)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs (6 KB)
+│   │   └── 📄 examples.md                        ← 6 example questions (8 KB)
+│   │
+│   ├── 📁 portfolio/
+│   │   ├── 📄 framework.md                       ← Business Diagnosis Framework (15 KB)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs (12 KB)
+│   │   └── 📄 examples.md                        ← 3 example questions (8 KB)
+│   │
+│   ├── 📁 tech-application/
+│   │   ├── 📄 framework.md                       ← Capabilities Matrix Framework (15 KB)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs (13 KB)
+│   │   └── 📄 examples.md                        ← 3 example questions (8 KB)
+│   │
+│   ├── 📁 conceptual/
+│   │   ├── 📄 framework.md                       ← Definition-Example Framework (13 KB)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs (12 KB)
+│   │   └── 📄 examples.md                        ← 5 example questions (9 KB)
+│   │
+│   ├── 📁 product-sense/
+│   │   ├── 📄 framework-milejpsr.md              ← MILEJPSR Framework (24 KB)
+│   │   ├── 📄 framework-circles.md               ← CIRCLES Framework (19 KB)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs (12 KB)
+│   │   └── 📄 examples.md                        ← 6 example questions (8 KB)
+│   │
+│   │   ─── ANALYTICAL (3 categories) ───
+│   │
+│   ├── 📁 goals-metrics/
+│   │   ├── 📄 framework.md                       ← G.A.M.E Framework
+│   │   ├── 📄 generation-rules.md                ← Question generation specs
+│   │   └── 📄 examples.md                        ← Example questions
+│   │
+│   ├── 📁 debugging/
+│   │   ├── 📄 framework.md                       ← S.I.E.V.E Framework (root-cause / metric drops)
+│   │   ├── 📄 generation-rules.md                ← Question generation specs
+│   │   └── 📄 examples.md                        ← Example questions
+│   │
+│   └── 📁 tradeoffs/
+│       ├── 📄 framework.md                       ← T.R.A.D.E Framework
+│       ├── 📄 generation-rules.md                ← Question generation specs
+│       └── 📄 examples.md                        ← Example questions
+│
+└── 📁 questions/                                 ← Generated questions go here (empty now)
+    ├── 📁 product-roadmap/                       ← DAY-MM-DD.md will appear here
+    ├── 📁 portfolio/                             ← DAY-MM-DD.md will appear here
+    ├── 📁 tech-application/                      ← DAY-MM-DD.md will appear here
+    ├── 📁 conceptual/                            ← DAY-MM-DD.md will appear here
+    ├── 📁 product-sense/                         ← DAY-MM-DD.md will appear here
+    ├── 📁 goals-metrics/                         ← DAY-MM-DD.md will appear here
+    ├── 📁 debugging/                             ← DAY-MM-DD.md will appear here
+    └── 📁 tradeoffs/                             ← DAY-MM-DD.md will appear here
+
+
+SUMMARY
+=======
+📦 Total: 35 files
+   • 6 documentation files (README, INSTALL, STRUCTURE, WHAT-WE-BUILT, COWORK-PROJECT, COWORK-SCHEDULED-TASK)
+   • 1 config file
+   • 3 core system files
+   • 25 plugin files (8 categories; product-sense has 4 files for two frameworks)
+   • 8 empty question folders
+
+💾 Total size: ~200 KB
+
+🎯 Purpose: Complete PM interview prep system with plugin architecture
+   • 8 active categories (5 strategic + 3 analytical)
+   • 9 frameworks (MATRIX, Business Diagnosis, Capabilities Matrix,
+     Definition-Example, MILEJPSR, CIRCLES, G.A.M.E, S.I.E.V.E, T.R.A.D.E)
+   • Daily question generation (13 questions/day)
+   • Interactive evaluation
+   • Extensible (add new categories without touching core)
+
+
+INSTALLATION TARGET
+===================
+Clone from GitHub, or copy the PrepQuestions/ folder into your Obsidian vault at:
+<your-vault-path>/PrepQuestions/
+
+
+NEXT STEPS
+==========
+1. Copy folder to Obsidian
+2. Open INSTALL.md for setup instructions
+3. Create Cowork scheduled task (paste master-generator.md)
+4. Create Cowork project (paste evaluator.md)
+5. Wait until 7 AM for first question generation
+6. Practice and get evaluated!
+

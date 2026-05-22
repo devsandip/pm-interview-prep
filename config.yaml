@@ -1,0 +1,102 @@
+# PM Interview Prep System Configuration
+
+version: "1.0"
+last_updated: "2026-05"
+
+# Global Settings
+global:
+  difficulty_distribution:
+    medium: 0.60    # 60% medium difficulty
+    hard: 0.30      # 30% hard difficulty
+    very_hard: 0.10 # 10% very hard difficulty
+  
+  daily_focus:
+    # Rotate focus area on a 4-day cycle, indexed by (day_of_month - 1) % 4
+    # Cycle repeats every 4 days throughout the month
+    cycle_index_0: "monetization"  # 70% of questions focus on monetization (days 1, 5, 9, 13, 17, 21, 25, 29)
+    cycle_index_1: "growth"        # 70% focus on growth (days 2, 6, 10, 14, 18, 22, 26, 30)
+    cycle_index_2: "competitive"   # 70% focus on competitive dynamics (days 3, 7, 11, 15, 19, 23, 27, 31)
+    cycle_index_3: "mixed"         # Balanced across all areas (days 4, 8, 12, 16, 20, 24, 28)
+  
+  variety_rules:
+    no_repeat_window: 2  # Don't repeat companies/products within 2 days
+    product_mix:
+      consumer: 0.40
+      b2b: 0.30
+      indian_market: 0.30
+
+# Question Categories
+categories:
+  # STRATEGIC QUESTIONS (5 categories)
+  - id: product-roadmap
+    name: "Product Roadmap"
+    active: true
+    questions_per_day: 2
+    time_limit: 25  # minutes
+    framework: "MATRIX"
+    folder: "plugins/product-roadmap"
+    description: "Build multi-year product strategies"
+  
+  - id: portfolio
+    name: "Portfolio/CEO Questions"
+    active: true
+    questions_per_day: 2
+    time_limit: 20
+    framework: "Business Diagnosis"
+    folder: "plugins/portfolio"
+    description: "If you were CEO, what would you build?"
+  
+  - id: tech-application
+    name: "Tech Application"
+    active: true
+    questions_per_day: 2
+    time_limit: 20
+    framework: "Capabilities Matrix"
+    folder: "plugins/tech-application"
+    description: "How would you use technology X at company Y?"
+  
+  - id: conceptual
+    name: "Conceptual"
+    active: true
+    questions_per_day: 2
+    time_limit: 5
+    framework: "Definition-Example"
+    folder: "plugins/conceptual"
+    description: "What's the difference between X and Y?"
+  
+  - id: product-sense
+    name: "Product Sense"
+    active: true
+    questions_per_day: 2
+    time_limit: 25
+    framework: "MILEJPSR or CIRCLES"
+    folder: "plugins/product-sense"
+    description: "Design a product or improve an existing one"
+  
+  # ANALYTICAL QUESTIONS (3 categories)
+  - id: goals-metrics
+    name: "Goals & Metrics"
+    active: true
+    questions_per_day: 1
+    time_limit: 25
+    framework: "G.A.M.E"
+    folder: "plugins/goals-metrics"
+    description: "Define success metrics for a product"
+  
+  - id: debugging
+    name: "Debugging & Diagnosis"
+    active: true
+    questions_per_day: 1
+    time_limit: 20
+    framework: "S.I.E.V.E"
+    folder: "plugins/debugging"
+    description: "Metric dropped X% - diagnose the issue"
+  
+  - id: tradeoffs
+    name: "Trade-offs"
+    active: true
+    questions_per_day: 1
+    time_limit: 20
+    framework: "T.R.A.D.E"
+    folder: "plugins/tradeoffs"
+    description: "Should we prioritize X or Y?"
